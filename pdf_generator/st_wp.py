@@ -1,6 +1,7 @@
 from pdf_generator import pdf_creator
 import streamlit as st
-
+import networkx as nx
+import osmnx as ox
 
 class WpApp:
     def __init__(self):
@@ -9,6 +10,10 @@ class WpApp:
 
     @staticmethod
     def gen_pdf():
+        st.write("NETWORKX")
+        st.write(nx.__version__)
+        st.write("OSMNX")
+        st.write(ox.__version__)
         trigger_pdf = st.button("generate")
         if trigger_pdf:
             pdf_creator.start()
