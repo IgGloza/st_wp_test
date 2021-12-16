@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Poppins;
+  font-weight: bold;
+  font-weight: 400;
+  src: url(font/Poppins-Bold.otf);
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: bold;
+  font-weight: 400;
+  src: url(font/Poppins-SemiBold.otf);
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 300;
+  src: url(font/Poppins-Regular.otf);
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 300;
+  src: url(font/Poppins-Light.otf);
+}
+
+
+@page {
+  size: landscape;
+
+  @bottom-left {
+    content: string(heading);
+    font-size: 9pt;
+    height: 1cm;
+    vertical-align: middle;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  @bottom-right {
+    background: #FD5C01;
+    color: #ffffff;
+    content: counter(page);
+    height: 1cm;
+    text-align: center;
+    width: 1cm;
+  }
+
+
+  @bottom-center {
+    background: #FD5C01;
+    content: '';
+    display: block;
+    height: 0.05cm;
+    opacity: 0.5;
+    width: 100%;
+  }
+}
+
+
+
+table{
+  border-collapse:separate;
+  border-spacing: 1em;
+
+}
+
+
+table th {
+  background-color: #FD5C01;
+
+}
+
+table tr {
+  background-color: #e3e3e3;
+
+}
+
+
+html {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 9pt;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+html body h1,
+html body h2,
+html body h3,
+html body h4 {
+  margin: 0;
+}
+
+html body h1 {
+  color: #ffffff;
+  font-size: 38pt;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+html body h2 {
+  string-set: heading content();
+  color: #FD5C01;
+  font-size: 24pt;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+
+html body article#cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  height: 297mm;
+}
+
+section {
+  margin-bottom: 2cm;
+}
+
+a {
+  font-style: italic;
+  font-size: 120%;
+}
+
+
+
+.header {
+	background-image : url("../../assets/mediolan.jpg");
+	width: 150px;
+    height: 35px;
+    background-size: 150px;
+}
+
+.map {
+  	background-image : url("../../assets/dogs.jpg");
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    display: block;
+    left: 250px;
+}
+
+.break_even {
+	background-image : url("../../assets/roma.jpg");
+	width: 760px;
+    height: 370px;
+    background-size: 770px;
+}

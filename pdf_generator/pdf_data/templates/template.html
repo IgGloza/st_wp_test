@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Nwt</title>
+  </head>
+
+  <body>
+    <article id="introduction" style="page-break-before: always">
+        <h2>New</h2>
+      <section id="ff">
+        <div class="header">
+	    </div>
+        <div>
+          <table style="float: left">
+            {% for item in travel_points_names_list %}
+              <tr>
+                {% if loop.first %}
+                  <th scope="row">From</th>
+                {% elif loop.last %}
+                  <th scope="row">To</th>
+                {% else %}
+                  <th scope="row">Via</th>
+                {% endif %}
+                <td> {{item}} </td>
+              </tr>
+            {% endfor %}
+            <tr>
+              <th scope="row">Tyte</th>
+            </tr>
+            <tr>
+              <td>{{chte}} </td>
+            </tr>
+          </table>
+        </div>
+        <div class="map">
+        </div>
+        <div>
+          <table style="float: right">
+            <tr>
+              <th></th>
+              <th>l</th>
+              <th>n</th>
+            </tr>
+            <tr>
+              <th scope="row">Lh</th>
+              <td>{{route_length}}</td>
+              <td>{{route_length}} km</td>
+           </tr>
+            <tr>
+              <th scope="row">Te</th>
+              <td>{{travel_timil}}</td>
+              <td>{{travel_timin}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Md</th>
+              <td>{{max_speed_ml}}h</td>
+              <td>{{max_speed_cin}}h</td>
+            </tr>
+            <tr>
+              <th scope="row">Md</th>
+              <td>{{min_speed_mil}} k</td>
+              <td>{{min_speed_cin}} k</td>
+            </tr>
+            <tr>
+              <th scope="row">Avd</th>
+              <td>{{avg_speed_cin}} h</td>
+              <td>{{avg_speed_ml}} k</td>
+            </tr>
+            <tr>
+              <th scope="row">Nps</th>
+              <td>{{stops_count_ml}}</td>
+              <td>{{stops_count_cin}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Enion</th>
+              <td>{{energy_cil}}</td>
+              <td>{{energy_consumption_cin}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Cn</th>
+              <td>{{co2_emission_ml}}</td>
+              <td>{{co2_emission_cin}}</td>
+            </tr>
+            <tr>
+              <th scope="row">y</th>
+              <td>{{capacity_ml}}</td>
+              <td>{{capacity_cin}}</td>
+            </tr>
+          </table>
+        </div>
+
+
+      </section>
+      <section id="features1" style="page-break-before: always">
+
+        <h2>Nww</h2>
+        <div class="header">
+	    </div>
+
+        <div>
+          <table style="float: left">
+            {% for item in travel_points_names_list %}
+              <tr>
+                {% if loop.first %}
+                  <th scope="row">m</th>
+                {% elif loop.last %}
+                  <th scope="row">o</th>
+                {% else %}
+                  <th scope="row">a</th>
+                {% endif %}
+                <td> {{item}} </td>
+              </tr>
+            {% endfor %}
+          </table>
+        </div>
+        <div>
+          <table style="float: right">
+            <tr>
+              <th></th>
+              <th>Ml</th>
+              <th>BS</th>
+              <th>C</th>
+              <th>NE</th>
+            </tr>
+            <tr>
+              <th scope="row">Time</th>
+              <td>{{stat_ml}} </td>
+              <td>{{b}} </td>
+              <td>{{stme}} </td>
+              <td>{{se}} </td>
+            </tr>
+            <tr>
+              <th scope="row">Aed</th>
+              <td>{{stml}} k</td>
+              <td>{{stapeed}} </td>
+              <td>{{seed}}</td>
+              <td>{{sted}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Random bs</th>
+              <td>{{ace}} </td>
+              <td>{{sip}} </td>
+              <td>{{se}} </td>
+              <td>{{slice}} </td>
+            </tr>
+            <tr>
+              <th scope="row">y</th>
+              <td>{{atail}} </td>
+              <td>{{bity}} </td>
+              <td>{{sy}} </td>
+              <td>{{tty}} </td>
+            </tr>
+            <tr>
+              <th scope="row">C</th>
+              <td>{{il}}</td>
+              <td>{{bun}} </td>
+              <td>{{cn}}  </td>
+              <td>{{sion}}  </td>
+            </tr>
+            <tr>
+              <th scope="row">a</th>
+              <td>{{gita}}</td>
+              <td>{{ta}}</td>
+              <td>{{pita}}</td>
+              <td>{{ita}}</td>
+            </tr>
+          </table>
+        </div>
+
+      </section>
+      <section id="features2" style="page-break-before: always">
+        <h2>NwO</h2>
+        <div class="header">
+	    </div>
+        <div>
+          <table style="float: left">
+            {% for item in randoms %}
+              <tr>
+                {% if loop.first %}
+                  <th scope="row">n</th>
+                {% elif loop.last %}
+                  <th scope="row">w</th>
+                {% else %}
+                  <th scope="row">o</th>
+                {% endif %}
+                <td> {{item}} </td>
+              </tr>
+            {% endfor %}
+          </table>
+        </div>
+        <div>
+          <table style="float: right">
+            <tr>
+              <th scope="row">R</th>
+              <td>{{nd}} </td>
+            </tr>
+            <tr>
+              <th scope="row">city</th>
+              <td>{{il}}</td>
+            </tr>
+            <tr>
+              <th scope="row">rains</th>
+              <td>{{ais}} </td>
+            </tr>
+            <tr>
+              <th scope="row">es</th>
+              <td>{{his}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Pass</th>
+              <td>{{ecle}}</td>
+            </tr>
+          </table>
+        </div>
+
+        <div>
+          <table style="position: absolute; bottom: 5px">
+            <tr>
+              <th>Nur</th>
+              <th>age</th>
+              <th>ue</th>
+            </tr>
+            <tr>
+              <td>{{pand}} </td>
+              <td>{{avg_ce}}</td>
+              <td>{{ree}}</td>
+            </tr>
+          </table>
+        </div>
+
+      </section>
+
+    <section id="features3" style="page-break-before: always">
+        <h2>N</h2>
+        <div class="header">
+	    </div>
+      <div>
+          <table style="float: left">
+            {% for item in travel_points_names_list %}
+              <tr>
+                {% if loop.first %}
+                  <th scope="row">m</th>
+                {% elif loop.last %}
+                  <th scope="row">o</th>
+                {% else %}
+                  <th scope="row">Va</th>
+                {% endif %}
+                <td> {{item}} </td>
+              </tr>
+            {% endfor %}
+          </table>
+      </div>
+      <div>
+        <table style="float:right; margin-right: 100px">
+          <tr>
+            <th scope="row">Iil</th>
+            <td>{{conim}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Il</th>
+            <td>{{mm}}</td>
+          </tr>
+          <tr>
+            <th scope="row">il</th>
+            <td>{{conro}}</td>
+          </tr>
+          <tr>
+            <th scope="row">OPil</th>
+            <td>{{mao}}</td>
+          </tr>
+
+          <tr>
+            <th scope="row">IMil</th>
+            <td>{{cim}} </td>
+          </tr>
+          <tr>
+            <th scope="row">Iil</th>
+            <td>{{maim}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Rl</th>
+            <td>{{conv}} </td>
+          </tr>
+          <tr>
+            <th scope="row">APE</th>
+            <td>{{mx_o}} </td>
+          </tr>
+        </table>
+      </div>
+
+      </section>
+
+      <section id="features4" style="page-break-before: always">
+        <div class="break_even" style="float: right">
+        </div>
+        <div class="header">
+	    </div>
+                <table>
+          <tr>
+            <th scope="row">SUM UP</th>
+          </tr>
+          <tr>
+            <th scope="row">CX</th>
+          </tr>
+          <tr>
+            <td>{{cm}} </td>
+          </tr>
+                            <tr>
+            <th scope="row">OPr</th>
+          </tr>
+          <tr>
+            <td>{{opr}} </td>
+          </tr>
+          <tr>
+            <th scope="row">Rear</th>
+          </tr>
+          <tr>
+            <td>{{rear}} </td>
+          </tr>
+          <tr>
+            <th scope="row">Car</th>
+          </tr>
+          <tr>
+            <td>{{cor}} </td>
+          </tr>
+          <tr>
+            <th scope="row">Tip</th>
+          </tr>
+          <tr>
+            <td>{{tip}} </td>
+          </tr>
+
+        </table>
+
+      </section>
+
+
+    </article>
+  </body>
+</html>
